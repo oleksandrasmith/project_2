@@ -1,0 +1,178 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:'Scheherazade New', serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: rgb(250, 250, 250);
+}
+
+header, 
+footer {
+    background-image: radial-gradient(rgba(69, 98, 179, 0.185), rgb(131, 174, 202))
+}
+
+#portfolio {
+    background-color: white; 
+    max-width: 1100px; 
+    padding: 10px;
+    margin: 0 auto;
+    text-align: center;
+    color: teal
+}
+
+.col {
+    margin: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    padding-top: 5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+   
+}
+
+nav {
+    padding: 25px;
+}
+
+h1, .top-nav {
+    text-align: center;
+}
+
+.top-nav, .top-nav li {
+    width: 100%;
+}
+
+.top-nav {
+    margin-top: 0;
+    margin-left: 20px;
+}
+
+.top-nav li {
+    padding: 10px 0;
+    margin: 5px auto;
+    background-color: #fff;
+}
+
+.top-nav a, .footer-nav a, .mini-title {
+    text-transform: uppercase;
+}
+
+#contact {
+    padding: px;
+    font-family: 'Titan One', cursive;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 0 20px;
+    height: 100px;
+    font-size: 75%;
+}
+
+.bottom-nav {
+    display: none;
+}
+
+hr {
+    margin: 0; 
+}
+
+.bottom {
+    text-align: center;
+}
+
+.bio {
+    text-align: center;
+}
+
+.bio img {
+    padding: 10px 50px;
+    
+}
+
+/* =======Media Queries============= */
+
+@media (min-width: 768px) {
+    
+    .top-nav {
+        display: flex;
+        justify-content: center;
+    }
+
+    .top-nav li {
+        background-color: transparent;
+    }
+
+    .bio {
+        display: flex;
+        flex-direction: row-reverse;
+        font-family: 'Titan One', cursive;
+    }
+
+    .projects {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col {
+        flex-basis: calc(50% - 20px);
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    .bottom-nav {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    .top {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    h1 {
+        margin-right: auto;
+    }
+
+    .col {
+        flex-basis: calc(33% - 20px);
+    }
+
+    .top-nav, 
+    .top-nav li {
+        width: initial;
+        padding: 1em;
+    }
+
+}
