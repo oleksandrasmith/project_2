@@ -53,6 +53,7 @@ nav {
 
 h1, .top-nav {
     text-align: center;
+    padding-left: 0;
 }
 
 .top-nav, .top-nav li {
@@ -75,7 +76,7 @@ h1, .top-nav {
 }
 
 #contact {
-    padding: px;
+    padding: 5px;
     font-family: 'Titan One', cursive;
 }
 
